@@ -3,9 +3,13 @@ $(document).ready(function() {
     event.preventDefault();
     const userYear = parseInt($("#year").val());
 
-    isLeapYear(1993)
-    function isLeapYear(year){
-      return false;
-    }
+    isLeapYear();
+    function isLeapYear(year) {
+      if (year % 4 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    };
   });
 });
