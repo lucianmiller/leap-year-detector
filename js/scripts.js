@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     const userYear = parseInt($("#year").val());
 
-    isLeapYear();
+    isLeapYear(userYear);
     function isLeapYear(year) {
       if ((year % 4 ===0) && (year % 100 !== 0) || (year % 400 === 0)) {
         return true;
